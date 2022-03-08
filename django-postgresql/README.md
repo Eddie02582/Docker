@@ -58,7 +58,7 @@ RUN pip install -r requirements.txt
 
 
 ## django 
-¤£ª¾¹D¬°¤°»òpostgres¨S«Ø¥ßUSER:Eddie
+ä¸çŸ¥é“ç‚ºä»€éº¼postgresæ²’å»ºç«‹USER:Eddie
 setting.py
 ```python
 DATABASES = {
