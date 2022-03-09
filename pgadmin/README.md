@@ -5,7 +5,7 @@ download image
     docker pull dpage/pgadmin4
 ```
 
-## environment 
+## Environment 
 
 <a href = "https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html">官網</a>
 
@@ -17,7 +17,7 @@ This is the email address used when setting up the initial administrator account
 ### PGADMIN_DEFAULT_EMAIL
 This is the password used when setting up the initial administrator account to login to pgAdmin. This variable is required and must be set at launch time.
 
-##Example
+## Example
 
 ```
 docker run -p 5050:80 \
