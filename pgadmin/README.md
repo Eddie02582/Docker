@@ -19,7 +19,7 @@ This is the password used when setting up the initial administrator account to l
 
 ## Example
 
-```
+```dockerfile
 docker run -p 5050:80 \
     -v D:\Docker\pgAdmin-data:/var/lib/pgadmin \
     -e PGADMIN_DEFAULT_EMAIL=eddie_chuang@sercomm.com \
