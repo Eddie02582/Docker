@@ -7,7 +7,7 @@ download image
 
 ## environment 
 
-<a href = "https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html">©xºô</a>
+<a href = "https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html">å®˜ç¶²</a>
 
 
 ### PGADMIN_DEFAULT_EMAIL
@@ -38,7 +38,7 @@ docker run -p 5050:80 \
  docker exec  6fde2520e1c8 /usr/local/pgsql-14/pg_dump postgresql://postgres:password@10.10.63.171:5432/postgres  --verbose --format=c --blobs  > qq.backup
  ```
  
- ©ÎªÌ¶i¤JCLI
+ æˆ–è€…é€²å…¥CLI
 ``` 
     /usr/local/pgsql-14/pg_dump postgresql://postgres:password@10.10.63.171:5432/postgres --file "/var/lib/pgadmin/storage/eddie_chuang_sercomm.com/qq.back_up" --verbose --format=c --blobs
 ```
