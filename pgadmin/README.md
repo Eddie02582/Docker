@@ -21,9 +21,27 @@ This is the password used when setting up the initial administrator account to l
 
 ```
 docker run -p 5050:80 \
-    -e PGADMIN_DEFAULT_EMAIL=your_email \
+    -v D:\Docker\pgAdmin-data:/var/lib/pgadmin \
+    -e PGADMIN_DEFAULT_EMAIL=eddie_chuang@sercomm.com \
     -e PGADMIN_DEFAULT_PASSWORD=password \
     -e PYTHONPATH=/pgadmin4 \
     -d dpage/pgadmin4 \
-    -name 'pgadmin'\
+    -name 'pgadmin'  
  ```
+ 
+ 
+ 
+ ## BackUP Data
+ 
+ 
+ ```
+ docker exec  6fde2520e1c8 /usr/local/pgsql-14/pg_dump postgresql://postgres:password@10.10.63.171:5432/postgres  --verbose --format=c --blobs  > qq.backup
+ ```
+ 
+ 或者進入CLI
+``` 
+    /usr/local/pgsql-14/pg_dump postgresql://postgres:password@10.10.63.171:5432/postgres --file "/var/lib/pgadmin/storage/eddie_chuang_sercomm.com/qq.back_up" --verbose --format=c --blobs
+```
+ 
+ 
+ 
